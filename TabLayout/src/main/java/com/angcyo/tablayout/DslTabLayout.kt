@@ -1764,12 +1764,12 @@ open class DslTabLayout(
             return
         }
 
-        dslSelector.visibleViewList.getOrNull(index)?.let {
-            if (!ViewCompat.isLaidOut(it)) {
-                //没有布局
-                return
-            }
-        }
+//        dslSelector.visibleViewList.getOrNull(index)?.let {
+//            if (!ViewCompat.isLaidOut(it)) {
+//                //没有布局
+//                return
+//            }
+//        }
 
         val dv = if (isHorizontal()) {
             val childTargetX = tabIndicator.getChildTargetX(index)
